@@ -1,0 +1,175 @@
+body {
+    margin: auto;
+    padding: 3rem;
+    background-color: bisque;
+}
+
+header {
+    text-align: center;
+}
+
+#title {
+    border-bottom: 4px solid black;
+    margin: 3rem;
+    padding: 12px;
+}
+
+.page-body {
+    background-color: rgb(123, 196, 123);
+    padding: 3rem;
+    text-align: center;
+    border-radius: 12px;
+    width: max-content;
+    margin: auto;
+}
+
+.habits {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 3rem;
+
+}
+
+.habit {
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: bisque;
+    padding: 3rem;
+    border-radius: 12px;
+}
+
+.habit-icon {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.habit-btn {
+    width: 24px;
+    height: 24px;
+    accent-color: rgb(123, 196, 123);
+    border: 1px solid currentColor;
+}
+
+.delete-habit {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 50%;
+    margin: 3rem;
+    
+}
+
+.main-btn {
+    font-size: 3rem;
+    background-color: bisque;
+    border: none;
+    color: rgb(123, 196, 123);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 12px;
+    transition: .2s;
+    transition: transform .2s ease;
+}
+
+.main-btn:active {
+    background-color: rgb(123, 196, 123);
+    color: bisque;
+    transform: scale(0.9);
+}
+
+.habit-add {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    border: 2px solid bisque;
+    padding: 36px;
+    border-radius: 12px;
+}
+
+.new-habit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+}
+
+.new-habit-input{
+    text-align: center;
+    height: 36px;
+    width: 30rem;
+    background-color: bisque;
+    border: 2px solid bisque;
+    border-radius: 12px;
+}
+
+.add-btn {
+    width: max-content;
+    font-size: 3rem;
+    background-color: bisque;
+    color: rgb(123, 196, 123);
+    border: none;
+    border-radius: 12px;
+}
+
+.finish {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.finish-popup {
+    color: black;
+    border-radius: 12px;
+    position: absolute;
+    max-width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: bisque;
+    padding: 20px;
+    text-align: center;
+    padding: 3rem;
+}
+
+.close {
+    background-color: transparent;
+    color: rgb(123, 196, 123);
+    font-size: 3rem;
+    border: none;
+    cursor: pointer;
+}
+
+.not-finished {
+    background-color: rgb(123, 196, 123);
+    position: fixed;
+    top: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 0.8rem;
+    margin-top: 2rem;
+    border-radius: 12px;
+    border: 4px solid black;
+    transition: top 0.5s ease-in-out;  
+}
